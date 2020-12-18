@@ -1,6 +1,3 @@
-path='C:\\Users\\nguye\\Downloads\\Ego-facebook.txt'
-path2='C:\\Users\\nguye\\Downloads\\test_graph_mitro.txt'
-path="graphs/test_graph_mitro.csv"
 import time
 import csv
 from os import listdir
