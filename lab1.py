@@ -153,6 +153,10 @@ def testing():
         print('=======================')
     plt.plot(n_plus_m, time_list, 'ro')
     plt.axis()
+    
+    plt.xlabel("|E|+|V|")
+    plt.ylabel("run time (in sec)")
+    plt.title("run time  vs. size of graph")
     plt.show()
         
 testing()
