@@ -10,35 +10,31 @@ def read_file(path) :
     nodes=[]
     if path.endswith("txt"):
         file1 = open(path, 'r') 
-        lines = file1.readlines() 
-      
-        for line in lines: 
+        lines = file1.readlines()   
+        for line in lines:
             
-            L=[int(s) for s in line.strip().split(' ')]
-            vertices+=[L]
-            nodes+=L
-        
-        
-        return vertices,list(set(nodes))
-    elif path.endswith("csv"):
-        
+            L=[int(s) for s in line.strip().split()]
+           
+            if len(L)==2 : #ignore self-loops and non formated lines
+                    if L[0]!=L[1]:vertices+=[L]
+                    nodes+=L 
+    elif path.endswith("csv"):  
         with open(path, newline='') as File:  
             reader = csv.reader(File)
             next(reader)
             for row in reader:
                 L=[int(s) for s in row]
-            
-                vertices+=[L]
-                nodes+=L
-            
-            
-        return vertices,list(set(nodes))
+               
+                if len(L)==2 : #ignore self-loops and non formated lines
+                    if L[0]!=L[1]:vertices+=[L]
+                    nodes+=L 
+    return vertices,list(set(nodes))
 
 def list_adjacence(vertices,nodes):
-    L=[[] for i in nodes]
+    L=[[] for i in range(max(nodes)+1)]
     
     for vertice in vertices:
-  
+    
         L[vertice[0]].append(vertice[1])
         L[vertice[1]].append(vertice[0])
     return L
@@ -58,9 +54,6 @@ def list_nodes_by_degree(D):
     return L
 
 def algo(path):
-    
-   
-
     ############ Init ##################
     vertices,nodes=read_file(path)
     #visualize(vertices)
@@ -68,56 +61,46 @@ def algo(path):
     deg = degree_function(L_adjacence, nodes)
     L_degrees=list_nodes_by_degree(deg)
     V = float(len(nodes))
-    E = float(len(vertices)+0.0)
+    E = float(len(vertices))
     d_max=max(deg)
     d_min=min(deg)
     removed=[]
-    binary_removed=[0 for i in nodes]
+    binary_removed=[0 for i in range(max(nodes)+1)]
     v_removed=[]
     number_nodes=len(nodes)
     p=E/V
     l=0
     m=0
-    d=0
+    d=p
+
+    print("init")
     ######### Boucle #########
     while number_nodes != len(removed) :
         while True:
-          vertice = L_degrees[d_min].pop()
-          while  d_min<=d_max and not L_degrees[d_min] :
-            d_min+=1
-          if binary_removed[vertice]==0:
-            
-            break
+            vertice = L_degrees[d_min].pop()
+            while  d_min<d_max and not L_degrees[d_min] :
+                d_min+=1
+            if binary_removed[vertice]==0:
+                break
 
         removed.append(vertice)
-        binary_removed[vertice]=1
-        
-           
+        binary_removed[vertice]=1   
         k=0
         for voisin in L_adjacence[vertice]:
             if not binary_removed[voisin] :
-                k+=1
-                
+                k+=1.0   
                 L_degrees[deg[voisin]-1].append(voisin)
                 if deg[voisin]== d_min : d_min-=1
                 deg[voisin]-=1
-                v_removed+=[(voisin,vertice)]
+                v_removed+=[[voisin,vertice]]
+                
         V-=1.0
         E-=k
-        if V!=0 and E/V > p  :
+        if V!=0 and float(E/V) > d  :
             l=len(removed)
             m=len(v_removed)
             d=E/V
-        #print("removed : "+str(removed))
-       
-    
-    
-##    print("density : "+ str(d))
-##    print(removed[l:])
-##    print(len(removed[l:]))
-##    print(v_removed[m:])
-##    print(len(v_removed[m:]))
-##    print("===============================")
+    #print("|nodes| "+str(len(removed[l:])))   
     return len(nodes),len(vertices),d,v_removed[m:]
 
 def visualize(vertices):
@@ -151,6 +134,7 @@ def testing():
         print("perf: "+str(tot_time)+" for n= "+str(n)+" and m = "+str(m))
         print('density = '+ str(d))
         print('=======================')
+        
     plt.plot(n_plus_m, time_list, 'ro')
     plt.axis()
     
@@ -158,5 +142,4 @@ def testing():
     plt.ylabel("run time (in sec)")
     plt.title("run time  vs. size of graph")
     plt.show()
-        
 testing()
