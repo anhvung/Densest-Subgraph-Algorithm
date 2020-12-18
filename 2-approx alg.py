@@ -3,7 +3,7 @@ import csv
 from os import listdir
 from os.path import isfile, join
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 def read_file(path) :
     vertices=[]
@@ -136,6 +136,8 @@ def testing():
         print('=======================')
         
     plt.plot(n_plus_m, time_list, 'ro')
+    m, b = np.polyfit(n_plus_m, time_list, 1)
+    plt.plot(n_plus_m, m*np.array(n_plus_m) + b)
     plt.axis()
     
     plt.xlabel("|E|+|V|")
