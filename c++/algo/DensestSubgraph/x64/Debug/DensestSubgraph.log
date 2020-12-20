@@ -1,0 +1,6 @@
+﻿  DensestSubgraph.cpp
+C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(53,41): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(78,28): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(138,15): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(94,11): warning C4101: 'p' : variable locale non référencée
+  DensestSubgraph.vcxproj -> C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\x64\Debug\DensestSubgraph.exe

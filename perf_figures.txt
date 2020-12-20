@@ -1,0 +1,140 @@
+testing : artist_edges.csv
+init
+perf: 2.0760390758514404 for n= 50515 and m = 819090
+density = 58.13167053364269
+=======================
+testing : as-skitter.txt
+init
+perf: 25.613476037979126 for n= 1696415 and m = 11095298
+density = 89.18097447795823
+=======================
+testing : athletes_edges.csv
+init
+perf: 0.4796440601348877 for n= 13866 and m = 86811
+density = 18.88095238095238
+=======================
+testing : CA-AstroPh.txt
+init
+perf: 0.627471923828125 for n= 18772 and m = 396100
+density = 396100.0
+=======================
+testing : CA-HepPh.txt
+init
+perf: 0.3363149166107178 for n= 12008 and m = 236978
+density = 236978.0
+=======================
+testing : company_edges.csv
+init
+perf: 0.11209607124328613 for n= 14113 and m = 52126
+density = 13.134328358208956
+=======================
+testing : deezer_europe_edges.csv
+init
+perf: 0.2013850212097168 for n= 28281 and m = 92752
+density = 8.367816091954023
+=======================
+testing : ego-Facebook.txt
+init
+perf: 0.11854696273803711 for n= 4039 and m = 88234
+density = 77.34653465346534
+=======================
+testing : government_edges.csv
+init
+perf: 0.24651098251342773 for n= 7057 and m = 89429
+density = 36.578512396694215
+=======================
+testing : HR_edges.csv
+init
+perf: 1.4121160507202148 for n= 54573 and m = 498202
+density = 16.382583025830257
+=======================
+testing : HU_edges.csv
+init
+perf: 0.5287430286407471 for n= 47538 and m = 222887
+density = 8.584415584415584
+=======================
+testing : lastfm_asia_edges.csv
+init
+perf: 0.07787609100341797 for n= 7624 and m = 27806
+density = 14.793650793650794
+=======================
+testing : musae_crocodile_edges.csv
+init
+perf: 0.3992791175842285 for n= 11631 and m = 179875
+density = 48.59012875536481
+=======================
+testing : musae_DE_edges.csv
+init
+perf: 0.3258838653564453 for n= 9498 and m = 153138
+density = 39.01589825119237
+=======================
+testing : musae_facebook_edges.csv
+init
+perf: 0.3933429718017578 for n= 22470 and m = 170823
+density = 35.0
+=======================
+testing : musae_git_edges.csv
+init
+perf: 0.6790239810943604 for n= 37700 and m = 289003
+density = 30.248603351955307
+=======================
+testing : musae_PTBR_edges.csv
+init
+perf: 0.058068037033081055 for n= 1912 and m = 31299
+density = 31.57777777777778
+=======================
+testing : musae_squirrel_edges.csv
+init
+perf: 0.4761769771575928 for n= 5201 and m = 216933
+density = 152.51633986928104
+=======================
+testing : new_sites_edges.csv
+init
+perf: 0.4751911163330078 for n= 27917 and m = 205964
+density = 18.402429764616553
+=======================
+testing : politician_edges.csv
+init
+perf: 0.09920406341552734 for n= 5908 and m = 41706
+density = 23.3625
+=======================
+testing : public_figure_edges.csv
+init
+perf: 0.15473389625549316 for n= 11565 and m = 67038
+density = 34.798561151079134
+=======================
+testing : roadNet-CA.txt
+init
+perf: 11.849451065063477 for n= 1965206 and m = 5533214
+density = 20220.0
+=======================
+testing : roadNet-PA.txt
+init
+perf: 6.452142953872681 for n= 1088092 and m = 3083796
+density = 8786.0
+=======================
+testing : roadNet-TX.txt
+init
+perf: 8.10301399230957 for n= 1379917 and m = 3843320
+density = 42106.0
+=======================
+testing : RO_edges.csv
+init
+perf: 0.2772541046142578 for n= 41773 and m = 125826
+density = 5.012345679012346
+=======================
+testing : test_graph_mitro.csv
+init
+perf: 0.0010180473327636719 for n= 10 and m = 16
+density = 2.0
+=======================
+testing : test_petit.txt
+init
+perf: 0.0009920597076416016 for n= 5 and m = 6
+density = 1.25
+=======================
+testing : tvshow_edges.csv
+init
+perf: 0.032752037048339844 for n= 3892 and m = 17239
+density = 30.953125
+=======================
