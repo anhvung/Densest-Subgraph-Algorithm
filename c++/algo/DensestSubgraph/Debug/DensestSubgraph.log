@@ -1,7 +1,0 @@
-﻿  DensestSubgraph.cpp
-C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(68,22): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(99,22): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(150,26): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(164,15): warning C4244: '-=' : conversion de 'float' en 'int', perte possible de données
-C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\DensestSubgraph\DensestSubgraph.cpp(120,11): warning C4101: 'p' : variable locale non référencée
-  DensestSubgraph.vcxproj -> C:\Users\nguye\OneDrive\Documents\GitHub\Densest-Subgraph-Algorithm\c++\algo\Debug\DensestSubgraph.exe
