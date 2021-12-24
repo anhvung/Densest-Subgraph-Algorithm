@@ -5,4 +5,6 @@ This is an implementation of an algorithm that computes an approximation of the 
 
 **A 2-approximation greedy algorithm was implemented in Python and C++**
 
+Network datasets: [https://snap.stanford.edu/data/egonets-Facebook.html](https://snap.stanford.edu/data/egonets-Facebook.html)
+
 Results [here](https://github.com/anhvung/Densest-Subgraph-Algorithm/blob/main/REPORT.pdf)
